@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Go Viral on YouTube</title>
+  <meta name="description" content="A simple guide to creating viral YouTube videos: hooks, retention, titles, thumbnails, distribution, and analytics." />
+  <style>
+    :root{
+      --bg:#0f1115;
+      --panel:#141821;
+      --text:#e7eaf0;
+      --muted:#aab2c0;
+      --accent:#ff3b3b;
+      --accent-2:#ff6a6a;
+      --ok:#46d38f;
+      --warn:#ffd166;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      --sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(255,58,58,0.12), transparent),
+        radial-gradient(1000px 500px at -10% 0%, rgba(255,106,106,0.10), transparent),
+        var(--bg);
+      line-height:1.6;
+    }
+    .wrap{max-width:1000px; margin:0 auto; padding:28px 20px 80px}
+    header{
+      background:linear-gradient(180deg, rgba(255,59,59,0.18), rgba(255,59,59,0.05));
+      border:1px solid rgba(255,59,59,0.25);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.03);
+    }
+    h1{
+      margin:0 0 6px 0;
+      font-size:clamp(28px, 4vw, 44px);
+      letter-spacing:-0.02em;
+      line-height:1.1;
+    }
+    .subtitle{color:var(--muted); margin-top:6px}
+    .badge{
+      display:inline-block; padding:4px 10px; border-radius:999px;
+      background:rgba(255,59,59,0.12); color:#ffdada; border:1px solid rgba(255,59,59,0.35);
+      font-size:12px; letter-spacing:.3px; text-transform:uppercase;
+    }
+    .grid{
+      display:grid; gap:16px; margin-top:20px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:16px; padding:18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+    .col-6{grid-column: span 6}
+    .col-4{grid-column: span 4}
+    .col-8{grid-column: span 8}
+    .col-12{grid-column: span 12}
+    @media (max-width: 860px){
+      .col-6,.col-4,.col-8{grid-column: span 12}
+    }
+    h2{margin:0 0 10px; font-size:clamp(20px, 2.6vw, 26px)}
+    h3{margin:12px 0 6px; font-size:18px}
+    p{margin:8px 0 10px}
+    ul,ol{margin:8px 0 0 18px}
+    code, .kpi small{font-family:var(--mono)}
+    .kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+    .kpi{
+      background:#0e121a; border:1px dashed rgba(255,255,255,0.12);
+      border-radius:12px; padding:12px; text-align:center
+    }
+    .kpi b{font-size:20px; display:block}
+    .tag{display:inline-block; background:#0e121a; border:1px solid rgba(255,255,255,.08); padding:4px 8px; border-radius:999px; font-size:12px; color:var(--muted)}
+    .checklist li{margin:6px 0}
+    .ok{color:var(--ok)} .warn{color:var(--warn)} .accent{color:var(--accent)}
+    .pill-cta{
+      display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:14px;
+      border:1px solid rgba(255,59,59,0.35); background:rgba(255,59,59,0.10);
+      text-decoration:none; color:#ffecec; margin-top:8px
+    }
+    .mono{font-family:var(--mono); font-size:13px; color:#eaeef6}
+    .tip{font-size:14px; color:var(--muted)}
+    .quote{
+      border-left:3px solid var(--accent);
+      padding-left:12px; color:#f6dede; background:rgba(255,59,59,0.06); border-radius:8px; margin:8px 0; padding-top:8px; padding-bottom:8px
+    }
+    footer{margin-top:28px; color:var(--muted); font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">YouTube Growth</span>
+      <h1>How to Go Viral on YouTube</h1>
+      <p class="subtitle">A practical, no-fluff playbook for attention, retention, and repeatable growth.</p>
+      <a class="pill-cta" href="#seven-day-plan" aria-label="Jump to the 7-day plan">
+        ⚡ Jump to the 7-Day Viral Plan
+      </a>
+    </header>
+
+    <section class="grid">
+      <article class="card col-8">
+        <h2>What “Viral” Really Means</h2>
+        <p>“Viral” isn’t random luck. It’s a math problem: <b class="accent">high click-through rate (CTR)</b> × <b class="accent">strong retention</b> × <b class="accent">broad satisfaction</b> across audiences. The algorithm amplifies videos that keep diverse viewers watching and engaging.</p>
+        <div class="quote">
+          Viral = People <i>want</i> to click + People <i>can’t stop</i> watching + People <i>feel rewarded</i> enough to share.
+        </div>
+        <div class="kpis" aria-label="Key performance indicators">
+          <div class="kpi"><b>CTR</b><small>Target: 6–12%+</small></div>
+          <div class="kpi"><b>Avg View %</b><small>Target: 45–65%+</small></div>
+          <div class="kpi"><b>1:30 Retention</b><small>Hold ≥70% if possible</small></div>
+          <div class="kpi"><b>Shares/1k</b><small>Chase upward trend</small></div>
+        </div>
+      </article>
+
+      <aside class="card col-4">
+        <h2>3 Levers of Virality</h2>
+        <ol>
+          <li><b>Hook Power:</b> First 3–8 seconds set the promise and tension.</li>
+          <li><b>Structural Retention:</b> Story beats every 10–20s; remove dead air.</li>
+          <li><b>Shareability:</b> Clear takeaway, emotion, or status boost for the viewer.</li>
+        </ol>
+      </aside>
+
+      <article class="card col-6">
+        <h2>Design Hooks That Demand Attention</h2>
+        <h3>The 5 Fast Hooks</h3>
+        <ul>
+          <li><b>Pattern Break:</b> Visual surprise + quick context (“I tried X so you don’t have to”).</li>
+          <li><b>Open Loop:</b> Tease outcome (“At 3AM this finally happened…”).</li>
+          <li><b>Big Promise:</b> Specific, desirable result (“Double your edits in half the time”).</li>
+          <li><b>Against the Grain:</b> Challenge a belief (“Don’t use ring lights until you see this”).</li>
+          <li><b>Numbered Quest:</b> “7 edits Hollywood colorists keep secret.”</li>
+        </ul>
+        <p class="tip">Rule of thumb: viewers should understand <i>what they’ll get</i> and <i>why now</i> by second 4.</p>
+      </article>
+
+      <article class="card col-6">
+        <h2>Retention Architecture</h2>
+        <ol>
+          <li><b>Promise → Proof → Payoff:</b> Repeat this mini-loop 2–4 times.</li>
+          <li><b>Pacing:</b> New visual or idea every 8–12 seconds.</li>
+          <li><b>Interrupts:</b> B-roll, captions, zooms, sound hits to reset attention.</li>
+          <li><b>Mid-Video Cliff:</b> “But there’s a catch…” to pull viewers into the second half.</li>
+          <li><b>Payoff:</b> Deliver early and again; don’t stall until the final minute.</li>
+        </ol>
+      </article>
+
+      <article class="card col-6">
+        <h2>Titles & Thumbnails that Click</h2>
+        <ul>
+          <li><b>Title:</b> 38–58 chars, ultra-specific, 1 promise, 0 clutter. Ex: <span class="mono">“I Posted 30 Shorts in 30 Days—Here’s What Actually Worked”</span></li>
+          <li><b>Thumbnail:</b> One idea, big face or clear object, 3–5 words max, high contrast.</li>
+          <li><b>Synergy:</b> Title teases logic; thumbnail shows emotion/evidence.</li>
+          <li><b>A/B Mindset:</b> Prepare 2–3 variants before publishing.</li>
+        </ul>
+      </article>
+
+      <article class="card col-6">
+        <h2>Shorts vs. Long-Form</h2>
+        <ul>
+          <li><b>Shorts:</b> Discovery rocket. 15–35s with ruthless pacing; no intro fluff.</li>
+          <li><b>Long-Form:</b> Depth and loyalty. 6–12 min is a reliable sweet spot for many niches.</li>
+          <li><b>Bridge:</b> Use Shorts to test hooks; expand winners into long videos.</li>
+        </ul>
+      </article>
+
+      <article class="card col-4">
+        <h2>Minimal Gear, Max Impact</h2>
+        <ul>
+          <li>Phone camera + window light or simple key light.</li>
+          <li>Clip-on mic > camera mic (audio = trust).</li>
+          <li>Hard cuts, on-beat edits, subtitles for silent viewers.</li>
+        </ul>
+      </article>
+
+      <article class="card col-4">
+        <h2>Distribution Boosters</h2>
+        <ul>
+          <li>Pin top comment with timestamps & resources.</li>
+          <li>Community post teasing your hook.</li>
+          <li>Repurpose: Shorts, Reels, TikTok (native text/captions).</li>
+          <li>Collab: trade 15s hooks with a peer creator.</li>
+        </ul>
+      </article>
+
+      <article class="card col-4">
+        <h2>Ethics & Safety</h2>
+        <ul>
+          <li>Respect privacy; avoid misleading claims.</li>
+          <li>Credit sources and music properly.</li>
+          <li>Disclose sponsorships clearly.</li>
+        </ul>
+      </article>
+
+      <article class="card col-12">
+        <h2>Publishing Checklist</h2>
+        <ul class="checklist">
+          <li><span class="ok">▣</span> Hook communicates promise by second 4.</li>
+          <li><span class="ok">▣</span> No dead air; new beat every 8–12 seconds.</li>
+          <li><span class="ok">▣</span> Title and thumbnail tell a single, unified story.</li>
+          <li><span class="ok">▣</span> Clear payoff + reason to share (“Show this to a friend who…”).</li>
+          <li><span class="ok">▣</span> End screen + pinned comment drive the next watch.</li>
+          <li><span class="ok">▣</span> Description front-loads value and keywords in sentence form.</li>
+        </ul>
+      </article>
+
+      <article id="seven-day-plan" class="card col-12">
+        <h2>7-Day Viral Sprint</h2>
+        <ol>
+          <li><b>Day 1 — Research:</b> Collect 20 winning titles/thumbnails in your niche; note hook patterns.</li>
+          <li><b>Day 2 — Scripting:</b> Write 3 short scripts (30–45s) + 1 long outline (8–10 min).</li>
+          <li><b>Day 3 — Production:</b> Batch-record; prioritize audio quality; capture B-roll.</li>
+          <li><b>Day 4 — Edit V1:</b> Cut relentlessly; add captions; test 2 cold opens.</li>
+          <li><b>Day 5 — Packaging:</b> Design 3 thumbnails per video; craft 3 title options each.</li>
+          <li><b>Day 6 — Publish & Promote:</b> Post 1 Long + 2 Shorts; pin comment; community post.</li>
+          <li><b>Day 7 — Analyze & Iterate:</b> Check CTR, 30s/60s retention dips; reshoot fixes if needed.</li>
+        </ol>
+        <p class="tip">If CTR &lt; 5%, re-package (title/thumbnail). If retention dips at 0:15, tighten the hook or move proof earlier.</p>
+      </article>
+
+      <article class="card col-8">
+        <h2>Read Your Analytics Like a Pro</h2>
+        <ul>
+          <li><b>Impressions → CTR:</b> Are you earning the click? If low, try a bolder premise or clearer image.</li>
+          <li><b>Audience Retention:</b> Note the exact time of dips; fix that beat next video.</li>
+          <li><b>Traffic Sources:</b> Aim for more Browse/Suggested by improving watch time and session starts.</li>
+          <li><b>End Screen Clicks:</b> Low? Make the next video the obvious next step in the story.</li>
+        </ul>
+      </article>
+
+      <article class="card col-4">
+        <h2>Simple Script Template</h2>
+        <ol>
+          <li><b>Hook (0–8s):</b> Promise + tension.</li>
+          <li><b>Credibility (8–20s):</b> Fast proof you’re worth their time.</li>
+          <li><b>Value Beats (20–180s):</b> 3–5 modular tips or story beats.</li>
+          <li><b>Payoff (final minute):</b> Deliver the headline result.</li>
+          <li><b>Next Step:</b> Tease related video and ask for 1 action only.</li>
+        </ol>
+      </article>
+
+      <article class="card col-12">
+        <h2>Copy-and-Paste Publishing Block</h2>
+        <pre class="mono">
+Title: I Tried 5 Viral Editing Tricks—Only 2 Actually Work
+Description (first lines): I tested five “viral” editing hacks on real videos. Here are the two that actually improved retention (with timestamps). 
+Hashtags: #YouTubeTips #VideoEditing #CreatorGrowth
+Pinned comment: Start with Trick #2 if you only have 60 seconds. Full timeline in the description—what should I test next?
+        </pre>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Viral YouTube Playbook. Built for creators who want repeatable wins, not one-hit wonders.
+    </footer>
+  </div>
+
+  <script>
+    // Tiny enhancement: current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
