@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando com segurança...</title>
+
+    <!-- ESSENCIAL: bloqueia envio do referer -->
+    <meta name="referrer" content="no-referrer" />
+
+    <!-- SCRIPT UTMIFY PARA PRESERVAR UTMS + BLOQUEIO DE SUBIDS E XCOD -->
+    <script
+      src="js/latest.js"
+      data-utmify-prevent-subids=""
+      data-utmify-prevent-xcod-sck=""
+      async=""
+      defer=""
+    ></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .spinner {
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #ccc;
+        border-top: 4px solid #2196f3;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        display: inline-block;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2></h2>
+      <div class="spinner"></div>
+      <noscript>
+        <p style="margin-top: 30px">
+          Automatic redirection disabled.<br />
+          <a href="https://go.centerpag.com/PPU38CQ0RIQ?upsell=true"
+            >Click here to continue</a
+          >.
+        </p>
+      </noscript>
+    </div>
+
+    <script>
+      // Garante que o script da UTMify foi carregado
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          const baseUrl = "https://go.centerpag.com/PPU38CQ0RIQ?upsell=true"; // Altere para seu destino final
+          let queryParams = "";
+
+          try {
+            if (
+              window.utmParams &&
+              typeof window.utmParams.toString === "function"
+            ) {
+              queryParams = window.utmParams.toString();
+            } else {
+              const urlParams = new URLSearchParams(window.location.search);
+              queryParams = urlParams.toString();
+            }
+          } catch (e) {
+            console.warn("Erro ao capturar UTMs:", e);
+          }
+
+          const finalUrl = baseUrl + (queryParams ? "?" + queryParams : "");
+          window.location.replace(finalUrl);
+        }, 600); // delay maior para garantir UTMify ativa
+      });
+    </script>
+  </body>
+</html>
